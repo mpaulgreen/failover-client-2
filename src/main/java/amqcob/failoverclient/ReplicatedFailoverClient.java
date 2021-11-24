@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class ReplicatedFailoverClient {
 
     public static void main(final String[] args) throws Exception {
-        final int numMessages = 10;
+        final int numMessages = 20;
         Connection connection = null;
         InitialContext initialContext = null;
 
@@ -88,6 +88,8 @@ public class ReplicatedFailoverClient {
         System.out.println();
         System.out.println();
         do {
+
+            System.out.println("Stopped            " + stopped);
             try (Socket ignore = new Socket("localhost",61617)) {
                 stopped = false;
                 System.out.println("Broker2 is running. Please stop it !!!");
