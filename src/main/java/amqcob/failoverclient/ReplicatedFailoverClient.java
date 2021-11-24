@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class ReplicatedFailoverClient {
 
     public static void main(final String[] args) throws Exception {
-        final int numMessages = 20;
+        final int numMessages = 10;
         Connection connection = null;
         InitialContext initialContext = null;
 
