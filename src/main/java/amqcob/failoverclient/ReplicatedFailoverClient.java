@@ -90,7 +90,7 @@ public class ReplicatedFailoverClient {
         do {
             try (Socket ignore = new Socket("localhost",61617)) {
                 stopped = false;
-                System.out.println("Broker1 is running. Please stop it !!!");
+                System.out.println("Broker2 is running. Please stop it !!!");
                 Thread.sleep(3000);
             } catch (Exception ignored) {
                 stopped = true;
